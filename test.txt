@@ -1,0 +1,113 @@
+ __    __     _ 
+/ / /\ \ \___| | ___ ___  _ __ ___   ___
+\ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+ \  /\  /  __/ | (_| (_) | | | | | |  __/
+  \/  \/ \___|_|\___\___/|_| |_| |_|\___|
+ __          __   __          __  __    __
+/ _\  /\  /\/ /  / _\  /\  /\/__\/ /   / /
+\ \  / /_/ / /   \ \  / /_/ /_\ / /   / /
+_\ \/ __  / /___ _\ \/ __  //__/ /___/ /__
+\__/\/ /_/\____/ \__/\/ /_/\__/\____/\____/
+version 2.0
+Han-2.0--> ls -l
+total 32
+-rwxr-xr-x 0 hjs29282 root  8168 Oct 24 19:48 shl.c
+-rwxr-xr-x 0 hjs29282 root  8166 Oct 24 19:07 shl.c~
+-rwxr-xr-x 0 hjs29282 root 13781 Oct 24 19:48 shlshell
+
+
+
+
+Han-2.0--> grep include shl.c > include.txt
+i find a > need to redirection
+out put is redirection to file: include.txt
+
+
+Han-2.0--> cat include.txt
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <time.h>
+
+Han-2.0--> grep include shl.c | wc > count.txt
+i find a | need to use pipe
+i find a > need to redirection
+comand befor pipe: grep include shl.c 
+comand after pipe: wc 
+out put is redirection to file: count.txt
+
+Han-2.0--> ls -l | wc -c
+i find a | need to use pipe
+comand befor pipe: ls -l 
+comand after pipe: wc -c
+283
+
+
+Han-2.0--> exit
+exit sussce
+   ______                ____ 
+  / ____/___  ____  ____/ / /_  __  _____
+ / / __/ __ \/ __ \/ __  / __ \/ / / / _ \
+/ /_/ / /_/ / /_/ / /_/ / /_/ / /_/ /  __/
+\____/\____/\____/\__,_/_.___/\__, /\___/
+                             /____/      
+
+
+
+
+
+
+
+
+
+
+
+sh-4.2$ ./shlShell
+ __    __     _ 
+/ / /\ \ \___| | ___ ___  _ __ ___   ___
+\ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+ \  /\  /  __/ | (_| (_) | | | | | |  __/
+  \/  \/ \___|_|\___\___/|_| |_| |_|\___|
+ __          __   __          __  __    __
+/ _\  /\  /\/ /  / _\  /\  /\/__\/ /   / /
+\ \  / /_/ / /   \ \  / /_/ /_\ / /   / /
+_\ \/ __  / /___ _\ \/ __  //__/ /___/ /__
+\__/\/ /_/\____/ \__/\/ /_/\__/\____/\____/
+version 2.0
+Han-2.0--> ^Z
+Suspending [shlShell] at [19:53:41] on [2014-10-24]
+Han-2.0-->^C
+Stop [shlShell] at [19:53:43] on [2014-10-24]
+sh-4.2$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
